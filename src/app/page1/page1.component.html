@@ -1,0 +1,111 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <img src="../../assets/download.png" style="width:100px">
+    <img src="../../assets/NJC_vertical.webp" style="margin-left: calc(100% - 150px)" width="50px">
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+<div>
+  <div class="row" style="margin: 5px;">
+    <mat-tab-group mat-stretch-tabs style="width: 100%;">
+
+
+      <mat-tab label="Get SMS">
+        <div class="row" style="margin:0px">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>From</mat-label>
+              <input matInput [(ngModel)]="fromUser">
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>To</mat-label>
+              <input matInput [(ngModel)]="toUser">
+            </mat-form-field>
+            <button mat-flat-button color="primary" (click)="getSms()">Get Sms</button>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+        <div class="row" style="margin:5px">
+
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <mat-card>
+            <mat-card-header>
+              <mat-card-title>Response</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>{{smsResponse | json}}</mat-card-content>
+          </mat-card></div>
+          <div class="col-sm-4"></div>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Send SMS">
+        <div class="row" style="margin:0px">
+
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>Message</mat-label>
+              <input matInput [(ngModel)]="smsMessage">
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>to</mat-label>
+              <input matInput [(ngModel)]="smsToUser">
+            </mat-form-field>
+            <button mat-flat-button color="primary" (click)="sendSms()">Send Sms</button>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+        <div class="row" style="margin:5px">
+
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <mat-card>
+            <mat-card-header>
+              <mat-card-title>Response</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>{{smsResponse | json}}</mat-card-content>
+          </mat-card></div>
+          <div class="col-sm-4"></div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Send WhatsApp Message">
+        <div class="row" style="margin:0px">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>Message</mat-label>
+              <input matInput [(ngModel)]="whatsappMessage">
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>To</mat-label>
+              <input matInput [(ngModel)]="whatsappToUser">
+            </mat-form-field>
+            <button mat-flat-button color="primary" (click)="sendWhatsapp()">Send WhatsApp Message</button>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+        <div class="row" style="margin:5px">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <mat-card>
+            <mat-card-header>
+              <mat-card-title>Response</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>{{smsResponse | json}}</mat-card-content>
+          </mat-card></div>
+          <div class="col-sm-4"></div>
+          
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+
+
+
+</div>
