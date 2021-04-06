@@ -42,6 +42,7 @@ export class Page1Component implements OnInit {
       },
       error => {
         console.log(error);
+        this.smsResponse = error;
       }
     );
     //console.log(this.getSmsResponse);
@@ -60,6 +61,7 @@ export class Page1Component implements OnInit {
       },
       error => {
         console.log(error);
+        this.smsResponse = error;
       }
     );
   }
@@ -77,6 +79,7 @@ export class Page1Component implements OnInit {
       },
       error => {
         console.log(error);
+        this.smsResponse = error;
       }
     );
 
