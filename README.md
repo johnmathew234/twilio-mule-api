@@ -2,6 +2,7 @@
 
 
 -> Clone the repository to the system.
+
 -> Install **VS code (only if the code needs to be viewed)**
 -> Install **node js** in the system, use the doc : **https://nodejs.org/en/download/**
 -> Open command prompt at the root of the project and install angular using the command : **npm install -g @angular/cli**
