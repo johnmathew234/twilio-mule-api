@@ -11,4 +11,4 @@
 
 -> Compile the angular code using the command : **ng serve** (by default the app is running in port 4200, change if required using the command **ng serve --port xxxx)**
 
--> Open the port in browser and execute operations
+-> Open the port in browser and execute the operations
