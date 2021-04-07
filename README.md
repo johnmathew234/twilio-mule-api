@@ -9,6 +9,8 @@
 
 -> Open command prompt at the root of the project and install angular using the command : **npm install -g @angular/cli**
 
+-> Download the project dependencies with the command : **npm i**
+
 -> Compile the angular code using the command : **ng serve** (by default the app is running in port 4200, change if required using the command **ng serve --port xxxx)**
 
 -> Open the port in browser and execute the operations
