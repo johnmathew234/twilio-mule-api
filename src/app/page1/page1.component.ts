@@ -17,9 +17,9 @@ export class Page1Component implements OnInit {
     this.arrayStatus = !this.arrayStatus;
   }
 
-  url1 = 'http://twilio-whatsapp-demo.us-e2.cloudhub.io/api/sendsms';
-  url2 = 'http://twilio-whatsapp-demo.us-e2.cloudhub.io/api/getsms';
-  url3 = 'http://twilio-whatsapp-demo.us-e2.cloudhub.io/api/sendwhatsapp';
+  url1 = 'http://twilio-whatsapp-ws-api.us-e2.cloudhub.io/sendsms';
+  url2 = 'http://twilio-whatsapp-ws-api.us-e2.cloudhub.io/getsms';
+  url3 = 'http://twilio-whatsapp-ws-api.us-e2.cloudhub.io/sendwhatsapp';
 
  
   constructor(private http: HttpClient) { }
